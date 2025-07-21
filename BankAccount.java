@@ -5,6 +5,13 @@ public class BankAccount {
     private String accountNumber;
     private double balance;
 
+    // Constructor
+    public BankAccount(String accountName, String accountNumber, double balance) {
+        this.accountName = accountName;
+        this.accountNumber = accountNumber;
+        this.balance = balance;
+    }
+
     public void showAccountInfo(){
         //Prints the details
         System.out.println("Account Name: " + accountName);
