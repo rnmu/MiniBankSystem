@@ -13,4 +13,10 @@ public class SavingsAccount extends BankAccount {
         System.out.println("Interest of " + interest + " OMR applied at rate: " + interestRate + "%");
     }
 
+    @Override
+    public void showAccountInfo() {
+        super.showAccountInfo(); // Call parent version first
+        System.out.println("Interest Rate: " + interestRate + "%");
+    }
+
 }
