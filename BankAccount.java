@@ -11,6 +11,9 @@ public class BankAccount {
         this.accountNumber = accountNumber;
         this.balance = balance;
     }
+    public double getBalance() {
+        return balance;
+    }
 
     public void showAccountInfo(){
         //Prints the details
