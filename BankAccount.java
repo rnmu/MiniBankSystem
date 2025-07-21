@@ -18,5 +18,23 @@ public class BankAccount {
         System.out.println("Account Number: " + accountNumber);
         System.out.println("Balance: " + balance + " OMR");
     }
+    // Deposit method
+    public void deposit(double amount) {
+        if (amount > 0) {
+            balance += amount;
+            System.out.println(amount + " OMR deposited. New balance: " + balance + " OMR");
+        } else {
+            System.out.println("Invalid deposit amount.");
+        }
+    }
 
+    // Withdraw method
+    public void withdraw(double amount) {
+        if (amount > 0 && amount <= balance) {
+            balance -= amount;
+            System.out.println(amount + " OMR withdrawn. New balance: " + balance + " OMR");
+        } else {
+            System.out.println("Invalid withdrawal amount or insufficient funds.");
+        }
+    }
 }
